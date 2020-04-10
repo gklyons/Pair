@@ -19,16 +19,19 @@ class PersonController {
     }
     
     // MARK: - CRUD
-    func add() {
-        
+    func add(with name: String) {
+        Person(name: name)
+        saveToPersistentStore()
     }
     
-    func update() {
-        
+    func update(person: Person, name: String) {
+        person.name = name
+        saveToPersistentStore()
     }
     
-    func delete() {
-        
+    func delete(person: Person) {
+        CoreDataStack.context.delete(person)
+        saveToPersistentStore()
     }
     
     func pairs() -> [[Person]] {
