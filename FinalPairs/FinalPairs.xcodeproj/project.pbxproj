@@ -15,6 +15,7 @@
 		D47352FF2440C41300619910 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D47352FD2440C41300619910 /* LaunchScreen.storyboard */; };
 		D4D420B32440C617006BE26A /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D420B22440C617006BE26A /* CoreDataStack.swift */; };
 		D4D420B52440CC70006BE26A /* Person+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D420B42440CC70006BE26A /* Person+Convenience.swift */; };
+		D4D420B72440CE54006BE26A /* PersonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D420B62440CE54006BE26A /* PersonController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		D47353002440C41300619910 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4D420B22440C617006BE26A /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		D4D420B42440CC70006BE26A /* Person+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+Convenience.swift"; sourceTree = "<group>"; };
+		D4D420B62440CE54006BE26A /* PersonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 		D4D420AF2440C5BC006BE26A /* Model Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D4D420B62440CE54006BE26A /* PersonController.swift */,
 			);
 			path = "Model Controllers";
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 				D47352FA2440C41000619910 /* FinalPairs.xcdatamodeld in Sources */,
 				D47352F02440C41000619910 /* AppDelegate.swift in Sources */,
 				D4D420B52440CC70006BE26A /* Person+Convenience.swift in Sources */,
+				D4D420B72440CE54006BE26A /* PersonController.swift in Sources */,
 				D47352F22440C41000619910 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

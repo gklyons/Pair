@@ -6,7 +6,6 @@
 //  Copyright © 2020 Turtle. All rights reserved.
 //
 
-import Foundation
 import CoreData
 
 extension Person {
