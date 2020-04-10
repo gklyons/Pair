@@ -15,12 +15,38 @@ class PersonListTableViewController: UITableViewController {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        randomize()
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        randomize()
+        tableView.reloadData()
     }
 
     // MARK: - Actions
     @IBAction func shuffleButtonTapped(_ sender: Any) {
+        randomize()
     }
+    
     @IBAction func addButtonTapped(_ sender: Any) {
+        let alertController = UIAlertController(title: "Add Name", message: "Add a name to the pairs list!", preferredStyle: .alert)
+        alertController.addTextField { textField in
+            textField.placeholder = "Enter name here..."
+            textField.autocapitalizationType = .words
+            textField.autocorrectionType = .no
+        }
+        let cancelAction = UIAlertAction(title: "Opps! ABORT!!!", style: .cancel, handler: nil)
+        let addAction = UIAlertAction(title: "Add", style: .default) { _ in
+            guard let name = alertController.textFields?.first?.text, !name.isEmpty else {
+                self.present(alertController, animated: true)
+                return
+            }
+            PersonController.sharedInstance.add(name: name)
+            self.randomize()
+        }
+        alertController.addAction(cancelAction)
+        alertController.addAction(addAction)
+        present(alertController, animated: true)
     }
     
     
