@@ -107,6 +107,7 @@
 		D4D420B02440C5C3006BE26A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D4D420B42440CC70006BE26A /* Person+Convenience.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -116,7 +117,6 @@
 			children = (
 				D47352F82440C41000619910 /* FinalPairs.xcdatamodeld */,
 				D4D420B22440C617006BE26A /* CoreDataStack.swift */,
-				D4D420B42440CC70006BE26A /* Person+Convenience.swift */,
 			);
 			path = "Core Data";
 			sourceTree = "<group>";
