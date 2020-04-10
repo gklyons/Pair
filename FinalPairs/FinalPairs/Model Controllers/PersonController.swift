@@ -31,8 +31,23 @@ class PersonController {
         
     }
     
-    func randomizeNames() {
-        
+    func pairs() -> [[Person]] {
+        let randomized = people.shuffled()
+        var singlePair = [Person]()
+        var multiplePairs = [[Person]]()
+        for person in randomized {
+            if singlePair.count == 0 {
+                singlePair.append(person)
+            } else {
+                singlePair.append(person)
+                multiplePairs.append(singlePair)
+                singlePair = [Person]()
+            }
+        }
+        if singlePair.count != 0 {
+            multiplePairs.append(singlePair)
+        }
+        return multiplePairs
     }
     
     // MARK: - Data Persistence
