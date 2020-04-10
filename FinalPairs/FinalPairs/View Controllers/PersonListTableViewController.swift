@@ -52,6 +52,10 @@ class PersonListTableViewController: UITableViewController {
     
     // MARK: - Table view data source
 
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return pairs?.count ?? 0
+    }
+    
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         "Group \(section + 1)"
     }

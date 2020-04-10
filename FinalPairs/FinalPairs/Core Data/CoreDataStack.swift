@@ -11,7 +11,7 @@ import CoreData
 class CoreDataStack {
     
     static var container: NSPersistentContainer = {
-        let container = NSPersistentContainer(name: "PairRandomizer")
+        let container = NSPersistentContainer(name: "FinalPairs")
         container.loadPersistentStores { (store, error) in
             if let error = error as NSError? {
                 print("ERROR loading from persistent store: Double back to CDS file.")

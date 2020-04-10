@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Vvn-nf-NDB">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -10,7 +10,7 @@
         <!--8 Ball Pair Shuffler-->
         <scene sceneID="8Gl-Nw-pOT">
             <objects>
-                <tableViewController id="TAq-qJ-7u8" sceneMemberID="viewController">
+                <tableViewController id="TAq-qJ-7u8" customClass="PersonListTableViewController" customModule="FinalPairs" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="xkK-rV-rBd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -45,25 +45,24 @@
                     <navigationItem key="navigationItem" title="8 Ball Pair Shuffler" id="Iue-SM-brs">
                         <barButtonItem key="leftBarButtonItem" title="🎱" id="Zdy-z3-7sl">
                             <connections>
-                                <action selector="shuffleButtonTapped:" destination="kQ9-dh-LNd" id="Pcr-DS-N3R"/>
+                                <action selector="shuffleButtonTapped:" destination="TAq-qJ-7u8" id="fyL-ot-qrA"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="sZ0-h0-DJA">
                             <connections>
-                                <action selector="addButtonTapped:" destination="kQ9-dh-LNd" id="Cgm-ht-ZBR"/>
+                                <action selector="addButtonTapped:" destination="TAq-qJ-7u8" id="JCE-bt-kNC"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NAb-h2-agr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="kQ9-dh-LNd" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="161" y="-81"/>
         </scene>
-        <!--View Controller-->
+        <!--Person Detail View Controller-->
         <scene sceneID="RVm-si-sao">
             <objects>
-                <viewController id="WFc-bT-rIc" sceneMemberID="viewController">
+                <viewController id="WFc-bT-rIc" customClass="PersonDetailViewController" customModule="FinalPairs" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hm7-2A-yr4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -96,13 +95,16 @@
                     <navigationItem key="navigationItem" id="ZLd-UN-LHL">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="pQl-lX-m9q">
                             <connections>
-                                <action selector="saveButtonTapped:" destination="hgj-eG-h67" id="qPL-Yy-YBS"/>
+                                <action selector="saveButtonTapped:" destination="WFc-bT-rIc" id="ZJD-Lu-aMa"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="nameTextField" destination="9QH-BJ-Uri" id="whY-Xv-v3b"/>
+                        <outlet property="personNameTextField" destination="s9K-oT-QDJ" id="Xl4-H5-y4D"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sQn-d7-duW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="hgj-eG-h67" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="922" y="-78"/>
         </scene>
