@@ -11,7 +11,7 @@ import UIKit
 class PersonDetailViewController: UIViewController {
 
     // MARK: - Properties
-    
+    var person: Person?
     // MARK: - IBOutlets
     
     // MARK: - Lifecycle
