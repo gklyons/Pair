@@ -16,6 +16,8 @@
 		D4D420B32440C617006BE26A /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D420B22440C617006BE26A /* CoreDataStack.swift */; };
 		D4D420B52440CC70006BE26A /* Person+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D420B42440CC70006BE26A /* Person+Convenience.swift */; };
 		D4D420B72440CE54006BE26A /* PersonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D420B62440CE54006BE26A /* PersonController.swift */; };
+		D4D420B92440DC44006BE26A /* PersonListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D420B82440DC44006BE26A /* PersonListTableViewController.swift */; };
+		D4D420BB2440DC67006BE26A /* PersonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D420BA2440DC67006BE26A /* PersonDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		D4D420B22440C617006BE26A /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		D4D420B42440CC70006BE26A /* Person+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+Convenience.swift"; sourceTree = "<group>"; };
 		D4D420B62440CE54006BE26A /* PersonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonController.swift; sourceTree = "<group>"; };
+		D4D420B82440DC44006BE26A /* PersonListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListTableViewController.swift; sourceTree = "<group>"; };
+		D4D420BA2440DC67006BE26A /* PersonDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,8 @@
 		D4D420AE2440C5B0006BE26A /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D4D420B82440DC44006BE26A /* PersonListTableViewController.swift */,
+				D4D420BA2440DC67006BE26A /* PersonDetailViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -195,9 +201,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4D420BB2440DC67006BE26A /* PersonDetailViewController.swift in Sources */,
 				D4D420B32440C617006BE26A /* CoreDataStack.swift in Sources */,
 				D47352FA2440C41000619910 /* FinalPairs.xcdatamodeld in Sources */,
 				D47352F02440C41000619910 /* AppDelegate.swift in Sources */,
+				D4D420B92440DC44006BE26A /* PersonListTableViewController.swift in Sources */,
 				D4D420B52440CC70006BE26A /* Person+Convenience.swift in Sources */,
 				D4D420B72440CE54006BE26A /* PersonController.swift in Sources */,
 				D47352F22440C41000619910 /* SceneDelegate.swift in Sources */,
