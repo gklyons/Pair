@@ -11,7 +11,7 @@ import UIKit
 class PersonListTableViewController: UITableViewController {
 
     // MARK: - Properties
-    
+    var pairs: [[Person]]?
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -74,7 +74,12 @@ class PersonListTableViewController: UITableViewController {
     }
     */
 
-    /*
+    // MARK: - Helper Functions
+    func randomize() {
+        pairs = PersonController.sharedInstance.pairs()
+        tableView.reloadData()
+    }
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -82,6 +87,6 @@ class PersonListTableViewController: UITableViewController {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
-    */
+    
 
 }

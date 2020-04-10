@@ -19,8 +19,8 @@ class PersonController {
     }
     
     // MARK: - CRUD
-    func add(with name: String) {
-        Person(name: name)
+    func add(name: String) {
+        _ = Person(name: name)
         saveToPersistentStore()
     }
     
