@@ -61,7 +61,7 @@ class PersonListTableViewController: UITableViewController {
         return "Group \(section + 1)"
         } else {
             return nil
-        }    
+        }
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -87,6 +87,7 @@ class PersonListTableViewController: UITableViewController {
             PersonController.sharedInstance.delete(person: person)
             tableView.deleteRows(at: [indexPath], with: .fade)
         }
+    randomize()
     }
     
 
