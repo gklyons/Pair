@@ -57,7 +57,11 @@ class PersonListTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        "Group \(section + 1)"
+        if self.tableView(tableView, numberOfRowsInSection: section) > 0 {
+        return "Group \(section + 1)"
+        } else {
+            return nil
+        }    
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
